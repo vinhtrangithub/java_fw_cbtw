@@ -24,7 +24,7 @@ Built with modern Java practices, TestNG, Page Object Model, parallel execution 
 ---
 
 ## 🏗 Project Structure Overview
-
+```bash
 automation-framework/
 ├── src/
 │   ├── main/
@@ -54,7 +54,7 @@ automation-framework/
 ├── pom.xml
 ├── testng.xml
 └── README.md
-
+```
 ---
 
 ## ⚡ Quick Start
@@ -104,6 +104,7 @@ api.base.url     = https://api.example.com
 
 ```bash
 mvn clean test
+```
 
 - Run Only one platform
 
@@ -114,15 +115,18 @@ mvn clean test -Dplatform=WEB
 mvn clean test -Dplatform=ANDROID
 # API
 mvn clean test -Dplatform=API
+```
 
 - Run via TestRunner
 
 ```bash
 mvn exec:java -Dexec.mainClass="com.example.tests.runners.TestRunner" -Dplatform=WEB
+```
 
 ## 🚀 CI/CD – GitHub Actions
 Create the file ".github/workflows/ci.yml":
 
+```bash
 name: Automated Testing
 
 on:
@@ -160,3 +164,4 @@ jobs:
         with:
           name: report-${{ matrix.platform }}
           path: reports/
+```
