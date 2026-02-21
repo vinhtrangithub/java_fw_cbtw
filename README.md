@@ -24,6 +24,7 @@ Built with modern Java practices, TestNG, Page Object Model, parallel execution 
 ---
 
 ## 🏗 Project Structure Overview
+
 automation-framework/
 ├── src/
 │   ├── main/
@@ -74,10 +75,11 @@ git clone <your-repo-url>
 cd automation-framework
 
 mvn clean install
+```
 
 ### 3. Configuration
  - Modify the file src/main/resources/config.properties:
-
+```
  # env
 environment      = qa
 platform         = WEB                # WEB | ANDROID | IOS | API
@@ -95,6 +97,7 @@ ios.device       = iPhone 15
 
 # API
 api.base.url     = https://api.example.com
+```
 
 ### 4. Run Test
 - All Test Suite
