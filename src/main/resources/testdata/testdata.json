@@ -1,0 +1,12 @@
+[
+  {
+    "platform": "WEB",
+    "username": "vinhtran",
+    "password": "Test12345"
+  },
+  {
+    "platform": "ANDROID",
+    "username": "mobileuser",
+    "password": "mobilepass"
+  }
+]
